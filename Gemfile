@@ -35,7 +35,6 @@ gem 'simple_form'                 # Simple form builder
 gem 'haml-rails'                  # Use haml processing in views 
 gem 'kaminari'                    # Pagination 
 
-gem 'turbolinks'                  # Turbolinks makes following links in your web application faster 
 gem 'jquery-turbolinks' 
 
 # Use ActiveModel has_secure_password
