@@ -1,2 +1,38 @@
-%h1 Products#index
-%p Find me in app/views/products/index.html.haml
+.row 
+  .medium-12.columns 
+
+    = form_tag products_index_path, method: 'get' do 
+      .row 
+        .medium-4.columns 
+          %b Product code: 
+          = text_field_tag :product_code, params[:product_code] 
+        .medium-4.columns 
+          %b Product name: 
+          = text_field_tag :product_name, params[:product_name] 
+        .medium-4.columns  
+ 
+      .row 
+        .medium-2.columns 
+          = button_tag type: 'submit', style: 'color:#FFFFFF;', class: 'button tiny expand' do 
+            %i.fa.fa-search.fa-lg 
+        .medium-10.columns  
+ 
+.row 
+  .separator  
+ 
+    %br  
+ 
+    .medium-12.columns  
+ 
+      %table#product_table 
+        %thead 
+          %tr 
+            %th{style: 'display: none'} ID 
+            %th Code 
+            %th Name 
+            %th Description... 
+            %th Category 
+            %th 
+            %th 
+            %th 
+        %tbody    

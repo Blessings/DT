@@ -30,7 +30,7 @@ gem 'jquery-ui-rails'             # JQuery UI Library
 gem 'jquery-datatables-rails'     # Use datatables as default tables in the application 
 gem 'font-awesome-rails'          # Icons 
 
-gem 'foundation-rails'            # zurb foundation 
+gem 'foundation-rails' , '5.4.5'           # zurb foundation 
 gem 'simple_form'                 # Simple form builder 
 gem 'haml-rails'                  # Use haml processing in views 
 gem 'kaminari'                    # Pagination 
